@@ -1,0 +1,175 @@
+
+/* 
+Beige:      #faf5e5
+Gold:       #f1b401
+Green:      #426f2a
+Dark Green: #355922
+Black:      #0f0501
+
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+*/
+
+nav{
+    background-color: #faf5e5;
+}
+
+#headline{
+    display: block;
+    width: 90%;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#hero{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    align-content: center;
+}
+
+#hero-text{
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#hero-text h1, #hero-text h2{
+    display: none;
+}
+
+#hero-text img{
+    display: block;
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#hero-text p{
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10%;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#hero-text a{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#hero #bigPhoto{
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#about{
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #355922;
+}
+
+#about h2, #links h2{
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+    color: #f1b401;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#about p{
+    font-size: 1.3em;
+    line-height: 1.8em;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    color: #faf5e5;
+}
+
+#links{
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+}
+
+#links h2{
+    color: #0f0501;
+}
+
+#links ul{
+    margin-top: 80px;
+}
+#links ul li a{
+    font-size: 3em;
+    display: block;
+    width: 84%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.button{
+    display: block;
+    font-size: 1.8em;
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #f1b401;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    color: #0f0501;
+    text-decoration: none;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 15px 4px #ffd24b;
+}
+
+
+@media (min-width: 1800px) {
+    html{
+        font-size: 18px;
+    }
+    #hero {
+        width: 80%;
+    }
+}
+@media (min-width: 1000px) {
+    #hero-text{
+        width: 50%;
+    }
+    #hero-text img{
+        width: 75%;
+        margin-top: 15%;
+    }
+    #hero-text p{
+        width: 80%;
+        font-size: 1.5em;
+        line-height: 1.8em;
+    }
+    #hero #bigPhoto{
+        width: 50%;
+        margin: 0;
+    }
+    #about p{
+        font-size: 1.5em;
+    }
+}

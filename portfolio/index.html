@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tyler Waite | Portfolio</title>
+        <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="/css/portfolio.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Franklin:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <img id="logo" src="/img/logo.svg" alt="Logo for tylerwaite.net" />
+            <div id="nav-tabs">
+                <a href="/" id="about-tab">About</a>
+                <a class="active" href="/portfolio/"id="portfolio-tab">Portfolio</a>
+            </div>
+        </nav>
+
+        <div id="portfolio">
+            <div id="portfolio-heading">
+                <h2>Portfolio</h2>
+                <button onclick="prev()">Previous</button>
+                <button onclick="next()">Next</button>
+            </div>
+            <ul id="scroller">
+            </ul>
+        </div>
+        <div id="container"></div>
+        <footer>
+            <p>Copyright 2023&copy;</p>
+        </footer>
+    </body>
+    
+    <script src="portfolio.js"></script>
+</html>

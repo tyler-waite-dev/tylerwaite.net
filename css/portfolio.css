@@ -1,0 +1,168 @@
+
+/* 
+Beige:      #faf5e5
+Gold:       #f1b401
+Green:      #426f2a
+Dark Green: #355922
+Black:      #0f0501
+
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+*/
+
+#portfolio{
+    margin-top: 70px;
+    padding: 40px 0;
+    background-color: #355922;
+}
+
+#portfolio-heading{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    gap: 10px;
+    max-width: 600px;
+}
+
+#portfolio-heading h2{
+    display: inline-block;
+    font-size: 3.5em;
+    font-family: 'Archivo Black', sans-serif;
+    color:#f1b401;
+    padding-bottom: 20px;
+    line-height: 1.2;
+    flex: 2;
+    flex-basis: 100%;
+}
+
+#portfolio-heading button{
+    align-self: center;
+    font-size: 1.8em;
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #f1b401;
+    text-align: center;
+    border-radius: 3px;
+    color: #0f0501;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+
+#scroller{
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    width: 98%;
+    margin: auto;
+    background-color: #355922;
+    scrollbar-width: thin;
+    scrollbar-color: #f1b401 #426f2a;
+}
+
+/* Works on Chrome, Edge, and Safari */
+#scroller::-webkit-scrollbar {
+    width: 12px;
+}
+
+#scroller::-webkit-scrollbar-track {
+    background: #355922;
+}
+
+#scroller::-webkit-scrollbar-thumb {
+    background-color: #f1b401;
+    border-radius: 20px;
+    border: 3px solid #355922;
+}
+
+#scroller li {
+    flex: 0 0 auto;
+    padding: 15px;
+    margin-bottom: 5px;
+    max-width: 100%;
+    border-right: solid 10px #355922;
+}
+
+#scroller li:hover{
+    cursor: pointer;
+}
+
+#scroller .active{
+    background-color: #426f2a;
+}
+
+#scroller li img {
+    display: block;
+    flex: 0 0 auto;
+    height: 150px;
+    margin: auto;
+    background-color: white;
+}
+#scroller li p{
+    font-size: 1.5em;
+    line-height: 1.1em;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 0;
+    color: #faf5e5;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#container{
+    display: block;
+    width: 94%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+#container h3{
+    display: block;
+    font-size: 3em;
+    font-family: 'Archivo Black', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#container h2{
+    display: block;
+    font-size: 2.3em;
+    font-family: 'Archivo Black', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#container p{
+    font-size: 1.3em;
+    line-height: 1.7em;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 20px;
+}
+
+#container img{
+    display: block;
+    width: 100%;
+    background-color: white;
+    margin: 50px auto;
+}
+
+
+@media (min-width: 1000px) {
+    
+    #portfolio-heading{
+        padding: 30px;
+    }
+    #portfolio-heading h2{
+        font-size: 5em;
+        padding-bottom: 0;
+    }
+    #portfolio-heading button:hover{
+        box-shadow: 0px 0px 15px 4px #ffd24b;
+    }
+    #container{
+        margin-bottom: 100px;
+    }
+}
